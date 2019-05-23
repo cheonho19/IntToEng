@@ -19,6 +19,24 @@ static String thousand = "thousand";
         sc.close();
     }
     static String translateEng(int n) {
-    	   return "";
+    	String s = "";
+    	if(n < 100) {
+    		s = underHundred(n);
+    	} else if(n < 1000) {
+    		s = underThousand(n);
+    	} else if(n < 10000){
+    		s = underTenThousand(n);
+    	} else if(n == 10000) {
+    		s = "ten thousand";
+    	} else {
+    		s = "10000未満の整数を入力してください";
+    	}
+    	return s;
+    }
+    static String underHundred(int n) {
+    }
+    static String underThousand(int n) {
+    }
+    static String underTenThousand(int n) {
     }
 }

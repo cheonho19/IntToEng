@@ -20,4 +20,13 @@ public class IntToEngTest {
 		String actual = ite.underThousand(999);
 		assertThat(actual, is(expected));
 	}
+	@Test
+	public void ゼロから10000未満() {
+		IntToEng ite = new IntToEng();
+		String expected = "nine thousand nine hundred ninety nine";
+		String actual = ite.underTenThousand(9999);
+		assertThat(actual, is(expected));
+	}
+	
+
 }
