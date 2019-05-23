@@ -3,7 +3,7 @@ package IntToEng;
 import java.util.Scanner;
 
 public class IntToEng {
-	
+
 static String zero2nineteen[] = {"zero","one","two","three","four","five","six","seven","eight","nine","ten",
 		         "eleven","twelve","thirteen","fourteen","fifteen","sixteen","seventeen","eighteen","nineteen"};
 static String twenty2ninety[] = {"twenty","thirty","fourty","fifty","sixty","seventy","eighty","ninety"};
