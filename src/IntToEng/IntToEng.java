@@ -50,7 +50,25 @@ static String thousand = "thousand";
     }
     
     static String underThousand(int n) {
+    	String s = "";
+    	int i = n%100;
+    	int j = n/100;
+		if(i != 0) {
+    		s = zero2nineteen[j] + " " + hundered + " " + underHundred(i);
+    	} else {
+    		s =  zero2nineteen[j] + " " +hundered;
+    	}
+    	return s;
     }
     static String underTenThousand(int n) {
+    	String s = "";
+    	int i = n%1000;
+    	int j = n/1000;
+		if(i != 0) {
+    		s = zero2nineteen[j] + " " + thousand + " " + underThousand(i);
+    	} else {
+    		s =  zero2nineteen[j] + " " +thousand;
+    	}
+    	return s;
     }
 }
